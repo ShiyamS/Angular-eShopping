@@ -19,7 +19,10 @@
     </div>
     <div class="options">
       <button class="btn btn-success">Show details</button>
-      <button class="btn btn-warning">Buy Now</button>
+      <button class="btn btn-warning" *ngIf="p.available != 'Not available' ; else notify">Buy Now</button>
+      <ng-template #notify>
+        <button class="btn btn-danger">Notify Me</button>
+      </ng-template>
     </div>
   </div>
 </div>

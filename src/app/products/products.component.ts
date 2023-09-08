@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
+
+
+
 products =  [
   {
     id: 1,
@@ -56,5 +59,24 @@ products =  [
     image: "https://picsum.photos/200",
   },
 ];
+
+getTotalProducts(){
+  return this.products.length;
+}
+
+getAvailableProducts(){
+  return this.products.filter(product => product.available === 'Available').length;
+}
+
+getNotAvailableProducts(){
+  return this.products.filter(product => product.available === 'Not available').length;
+}
+
+courseCountRadioButton : string = 'all'
+
+onChangeRadioButtonValue(data :string){
+  this.courseCountRadioButton = data;
+  console.log(this.courseCountRadioButton,'Parent');
+}
 
 }

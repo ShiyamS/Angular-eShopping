@@ -2,6 +2,7 @@
   <!-- <app-container></app-container> -->
 
   <!-- Template Reference -->
-  <app-demo></app-demo>
-  <!-- <app-customer></app-customer> -->
+  <!-- <app-demo></app-demo> -->
+  <app-customer #customer></app-customer>
+  {{'You have selected customer : ' + customer.selectedCustomer?.name}}
 </div>

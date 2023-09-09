@@ -8,7 +8,7 @@ import { Customer } from './customer';
 })
 export class CustomerComponent {
 
-  selectedCustomer: any;
+  selectedCustomer?: Customer;
 
   customers: Customer[] = [
     {
@@ -48,4 +48,7 @@ export class CustomerComponent {
     }
   ]
 
+  onSelecteCustomer(selecteCustomer: Customer) {
+    this.selectedCustomer = selecteCustomer
+  }
 }

@@ -7,12 +7,14 @@ import { Component } from '@angular/core';
 })
 export class ProductsComponent {
 
-
+  courseCountRadioButton : string = 'all'
+  searchedTextValue: string = ""
+  noData:boolean = true;
 
 products =  [
   {
     id: 1,
-    name: "Product 1",
+    name: "Angular",
     price: 10.99,
     color: "red",
     available: 'Available',
@@ -20,7 +22,7 @@ products =  [
   },
   {
     id: 2,
-    name: "Product 2",
+    name: "React",
     price: 19.99,
     color: "blue",
     available: 'Not available',
@@ -28,7 +30,7 @@ products =  [
   },
   {
     id: 3,
-    name: "Product 3",
+    name: "Javascript",
     price: 7.99,
     color: "green",
     available: 'Available',
@@ -36,7 +38,7 @@ products =  [
   },
   {
     id: 4,
-    name: "Product 4",
+    name: "Angular",
     price: 14.99,
     color: "yellow",
     available: 'Available',
@@ -44,7 +46,7 @@ products =  [
   },
   {
     id: 5,
-    name: "Product 5",
+    name: "Python",
     price: 5.99,
     color: "orange",
     available:'Not available',
@@ -52,7 +54,7 @@ products =  [
   },
   {
     id: 6,
-    name: "Product 6",
+    name: "Java",
     price: 9.99,
     color: "purple",
     available: 'Available',
@@ -72,11 +74,16 @@ getNotAvailableProducts(){
   return this.products.filter(product => product.available === 'Not available').length;
 }
 
-courseCountRadioButton : string = 'all'
+
 
 onChangeRadioButtonValue(data :string){
   this.courseCountRadioButton = data;
-  console.log(this.courseCountRadioButton,'Parent');
+  // console.log(this.courseCountRadioButton,'Parent');
+}
+
+getSearchedValue(searchedValue:string){
+  this.searchedTextValue = searchedValue;
+  console.log(this.searchedTextValue);
 }
 
 }

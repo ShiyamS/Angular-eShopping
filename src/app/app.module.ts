@@ -12,10 +12,11 @@ import { ProductsComponent } from './products/products.component';
 import { FilterComponent } from './filter/filter.component';
 import { DemoComponent } from './demo/demo.component';
 import { CustomerComponent } from './customer/customer.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ContainerComponent, NavComponent, HeaderComponent, NotificationComponent, SearchComponent, ProductsComponent, FilterComponent, DemoComponent, CustomerComponent
+    AppComponent, ContainerComponent, NavComponent, HeaderComponent, NotificationComponent, SearchComponent, ProductsComponent, FilterComponent, DemoComponent, CustomerComponent, NgContentComponent
   ],
   imports: [
     BrowserModule,

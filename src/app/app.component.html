@@ -2,12 +2,12 @@
   <!-- <app-container></app-container> -->
 
   <!-- Template Reference -->
-  <app-demo></app-demo>
+  <!-- <app-demo></app-demo> -->
   <!-- <app-customer #customer></app-customer>
   {{'You have selected customer : ' + customer.selectedCustomer?.name}} -->
 
   <!-- @View Child -->
-  <div>
+  <!-- <div>
     <label for="dob"> DOB: </label>
     <input type="date" name="dob" #dobInput (blur)="calculateAge()">
     <br>
@@ -15,5 +15,14 @@
     <input type="text" name="age" #ageInput>
 
   </div>
-  {{demo?.sayHello()}}
+  {{demo?.sayHello()}} -->
+
+  <app-ng-content>
+    <h1 class="title btn btn-warning"> My phone Samsung</h1>
+    <button class="btn btn-success"> Samsung Info</button>
+  </app-ng-content>
+  <app-ng-content>
+    <h1 class="title btn btn-warning"> My phone Iphone</h1>
+    <button class="btn btn-success"> Inphone Info</button>
+  </app-ng-content>
 </div>

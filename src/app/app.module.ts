@@ -14,14 +14,15 @@ import { DemoComponent } from './demo/demo.component';
 import { CustomerComponent } from './customer/customer.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { ContentChilcComponent } from './content-chilc/content-chilc.component';
+import { SetBackgroundDirective } from './customDirectives/setBackground.directive';
 
 @NgModule({
   declarations: [
-    AppComponent, ContainerComponent, NavComponent, HeaderComponent, NotificationComponent, SearchComponent, ProductsComponent, FilterComponent, DemoComponent, CustomerComponent, NgContentComponent, ContentChilcComponent
+    AppComponent, ContainerComponent, NavComponent, HeaderComponent, NotificationComponent, SearchComponent, ProductsComponent, FilterComponent, DemoComponent, CustomerComponent, NgContentComponent, ContentChilcComponent, SetBackgroundDirective
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

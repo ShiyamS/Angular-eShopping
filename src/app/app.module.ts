@@ -16,10 +16,11 @@ import { NgContentComponent } from './ng-content/ng-content.component';
 import { ContentChilcComponent } from './content-chilc/content-chilc.component';
 import { SetBackgroundDirective } from './customDirectives/setBackground.directive';
 import { HighlighterDirective } from './customDirectives/highlighter.directive';
+import { HoverDirective } from './customDirectives/hover.directive';
 
 @NgModule({
   declarations: [
-    AppComponent, ContainerComponent, NavComponent, HeaderComponent, NotificationComponent, SearchComponent, ProductsComponent, FilterComponent, DemoComponent, CustomerComponent, NgContentComponent, ContentChilcComponent, SetBackgroundDirective, HighlighterDirective
+    AppComponent, ContainerComponent, NavComponent, HeaderComponent, NotificationComponent, SearchComponent, ProductsComponent, FilterComponent, DemoComponent, CustomerComponent, NgContentComponent, ContentChilcComponent, SetBackgroundDirective, HighlighterDirective, HoverDirective
   ],
   imports: [
     BrowserModule,

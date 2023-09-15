@@ -48,5 +48,8 @@ export class AppComponent implements OnInit {
 
   mostLikes = this.mostLikedCard();
 
+  // Based on condition we are setting the background color
+  active: boolean = false
+
 
 }

@@ -20,10 +20,11 @@ import { HoverDirective } from './customDirectives/hover.directive';
 import { BetterHighlighterDirective } from './customDirectives/better-highlighter.directive';
 import { ClassDirective } from './customDirectives/class.directive';
 import { Highlighter2Directive } from './customDirectives/highlighter2.directive';
+import { StyleDirective } from './customDirectives/style.directive';
 
 @NgModule({
   declarations: [
-    AppComponent, ContainerComponent, NavComponent, HeaderComponent, NotificationComponent, SearchComponent, ProductsComponent, FilterComponent, DemoComponent, CustomerComponent, NgContentComponent, ContentChilcComponent, SetBackgroundDirective, HighlighterDirective, HoverDirective, BetterHighlighterDirective, ClassDirective, Highlighter2Directive
+    AppComponent, ContainerComponent, NavComponent, HeaderComponent, NotificationComponent, SearchComponent, ProductsComponent, FilterComponent, DemoComponent, CustomerComponent, NgContentComponent, ContentChilcComponent, SetBackgroundDirective, HighlighterDirective, HoverDirective, BetterHighlighterDirective, ClassDirective, Highlighter2Directive, StyleDirective
   ],
   imports: [
     BrowserModule,

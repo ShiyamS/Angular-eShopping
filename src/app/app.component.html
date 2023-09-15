@@ -33,7 +33,7 @@
 
   <!-- Custom Directive  -->
   <div class="container">
-    <h1 class="container" setBackground appHover>Lorem ipsum dolor sit amet consectetur.
+    <!-- <h1 class="container" setBackground appHover>Lorem ipsum dolor sit amet consectetur.
     </h1>
     <br>
     <p class="container" setBackground appHover>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus,
@@ -53,6 +53,26 @@
       autem
       reprehenderit.
       Officiis adipisci
+      excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p> -->
+    <!-- Default ng Style -->
+    <p class="container" [ngStyle]="{backgroundColor:'pink',color: 'white'}">Lorem
+      ipsum dolor sit amet,
+      consectetur
+      adipisicing elit. Voluptatibus,
+      autem
+      reprehenderit.
+      Officiis adipisci
+      excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p>
+
+    <!-- Custom Ng Style  -->
+
+    <p class="container" [ngStyle]="{backgroundColor:'pink',color: 'white'}">Lorem
+      ipsum dolor sit amet,
+      consectetur
+      adipisicing elit. Voluptatibus,
+      autem
+      reprehenderit.
+      Officiis adipisci
       excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p>
     <!-- NgClass -->
     <!-- <p [ngClass]="{'container' : true, 'font-chnage' : true}">Lorem
@@ -62,8 +82,8 @@
       autem
       reprehenderit.
       Officiis adipisci
-      excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p>
-       -->
+      excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p> -->
+
     <!-- custom NgClass -->
     <!-- Scenarion 1 -->
     <!-- <p appClass [display]="{'container' : true, 'font-chnage' : true}">Lorem
@@ -75,15 +95,30 @@
       Officiis adipisci
       excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p> -->
     <!-- Scenario 2 -->
-    <p [appClass]="{'container' : true, 'font-chnage' : true}">Lorem
+    <!-- <p [appClass]="{'container' : true, 'font-chnage' : true}">Lorem
       ipsum dolor sit amet,
       consectetur
       adipisicing elit. Voluptatibus,
       autem
       reprehenderit.
       Officiis adipisci
-      excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p>
+      excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p> -->
+
+    <!-- </div> -->
+    <!-- <div class="container d-flex flex-row  justify-content-center">
+    <ng-container>
+      <div class="card m-3" style="width: 18rem;" *ngFor="let card of cards"
+        [appHighlighter2]="card.likes === mostLikes ">
+        <img class=" card-img-top" [src]='card.cardImage' alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text"> Title : {{card.title}}</p>
+          <p class="card-text"> Likes: {{card.likes }}</p>
+        </div>
+      </div>
+
+    </ng-container>
+
+  </div> -->
+
 
   </div>
-
-</div>

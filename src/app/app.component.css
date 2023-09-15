@@ -12,3 +12,7 @@
   font-family: "Courier New", Courier, monospace;
   color: blueviolet;
 }
+
+.card-higlighter {
+  border: blue 7px solid;
+}

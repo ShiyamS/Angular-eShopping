@@ -51,5 +51,11 @@ export class AppComponent implements OnInit {
   // Based on condition we are setting the background color
   active: boolean = false
 
+  displayNotify: boolean = false;
+
+  notifyMe() {
+    this.displayNotify = true;
+  }
+
 
 }

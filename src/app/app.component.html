@@ -55,25 +55,25 @@
       Officiis adipisci
       excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p> -->
     <!-- Default ng Style -->
-    <p class="container" [ngStyle]="{backgroundColor:'pink',color: 'white'}">Lorem
+    <!-- <p class="container" [ngStyle]="{backgroundColor:'pink',color: 'white'}">Lorem
       ipsum dolor sit amet,
       consectetur
       adipisicing elit. Voluptatibus,
       autem
       reprehenderit.
       Officiis adipisci
-      excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p>
+      excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p> -->
 
     <!-- Custom Ng Style  -->
 
-    <p class="container" [appStyle]="{backgroundColor: active ? 'green':'red',color: 'white'}">Lorem
+    <!-- <p class="container" [appStyle]="{backgroundColor: active ? 'green':'red',color: 'white'}">Lorem
       ipsum dolor sit amet,
       consectetur
       adipisicing elit. Voluptatibus,
       autem
       reprehenderit.
       Officiis adipisci
-      excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p>
+      excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p> -->
     <!-- NgClass -->
     <!-- <p [ngClass]="{'container' : true, 'font-chnage' : true}">Lorem
       ipsum dolor sit amet,
@@ -119,6 +119,28 @@
     </ng-container>
 
   </div> -->
+    <!-- Default dehaviour of *ng if -->
+    <button class="btn btn-warning" (click)="notifyMe()"> Notify</button>
 
+    <div class="container">
+      <p *ngIf="displayNotify; else myVar">
+        This is to notify you !
+      </p>
+    </div>
+    <ng-template #myVar>
+      <p>Random notification</p>
+    </ng-template>
 
+    <!-- In context how anguler behaive in *ngIf-->
+
+    <div class="container">
+      <ng-template [ngIf]='displayNotify' [ngIfElse]="myVar">
+        <p>
+          This is to notify you !
+        </p>
+      </ng-template>
+    </div>
+    <ng-template #myVar>
+      <p>Random notification</p>
+    </ng-template>
   </div>

@@ -57,5 +57,12 @@ export class AppComponent implements OnInit {
     this.displayNotify = true;
   }
 
+  userValue: string = ''
+
+  getValue(value: string) {
+    this.userValue = value;
+    console.log(value);
+  }
+
 
 }

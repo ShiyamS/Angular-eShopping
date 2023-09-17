@@ -24,6 +24,7 @@ import { StyleDirective } from './customDirectives/style.directive';
 import { IfDirective } from './customDirectives/if.directive';
 import { AngularComponent } from './angular/angular.component';
 import { JavascriptComponent } from './javascript/javascript.component';
+import { EnrollService } from './services/enroll.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { JavascriptComponent } from './javascript/javascript.component';
     BrowserModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [EnrollService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

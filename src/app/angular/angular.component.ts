@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
 export class AngularComponent {
   title: string = "Angular";
 
+  constructor(private enroll: EnrollService) { }
+
   onEnroll() {
     const enroll = new EnrollService();
     enroll.onEnrollService(this.title);

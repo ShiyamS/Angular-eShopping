@@ -1,13 +1,12 @@
-<div class="wrapper">
-  <!-- <app-container></app-container> -->
+<!-- <app-container></app-container> -->
 
-  <!-- Template Reference -->
-  <!-- <app-demo></app-demo> -->
-  <!-- <app-customer #customer></app-customer>
+<!-- Template Reference -->
+<!-- <app-demo></app-demo> -->
+<!-- <app-customer #customer></app-customer>
   {{'You have selected customer : ' + customer.selectedCustomer?.name}} -->
 
-  <!-- @View Child -->
-  <!-- <div>
+<!-- @View Child -->
+<!-- <div>
     <label for="dob"> DOB: </label>
     <input type="date" name="dob" #dobInput (blur)="calculateAge()">
     <br>
@@ -17,7 +16,7 @@
   </div>
   {{demo?.sayHello()}} -->
 
-  <!-- <app-ng-content>
+<!-- <app-ng-content>
     <h1 class="title btn btn-warning"> My phone Samsung</h1>
     <button class="btn btn-success"> Samsung Info</button>
   </app-ng-content>
@@ -25,15 +24,15 @@
     <h1 class="title btn btn-warning"> My phone Iphone</h1>
     <button class="btn btn-success"> Inphone Info</button>
   </app-ng-content> -->
-  <!-- <h2>In app Component</h2>
+<!-- <h2>In app Component</h2>
   <app-content-chilc>
     <p #paragraph>This is my child component</p>
   </app-content-chilc> -->
 
 
-  <!-- Custom Directive  -->
-  <div class="container">
-    <!-- <h1 class="container" setBackground appHover>Lorem ipsum dolor sit amet consectetur.
+<!-- Custom Directive  -->
+<!-- <div class="container"> -->
+<!-- <h1 class="container" setBackground appHover>Lorem ipsum dolor sit amet consectetur.
     </h1>
     <br>
     <p class="container" setBackground appHover>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus,
@@ -54,8 +53,8 @@
       reprehenderit.
       Officiis adipisci
       excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p> -->
-    <!-- Default ng Style -->
-    <!-- <p class="container" [ngStyle]="{backgroundColor:'pink',color: 'white'}">Lorem
+<!-- Default ng Style -->
+<!-- <p class="container" [ngStyle]="{backgroundColor:'pink',color: 'white'}">Lorem
       ipsum dolor sit amet,
       consectetur
       adipisicing elit. Voluptatibus,
@@ -64,9 +63,9 @@
       Officiis adipisci
       excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p> -->
 
-    <!-- Custom Ng Style  -->
+<!-- Custom Ng Style  -->
 
-    <!-- <p class="container" [appStyle]="{backgroundColor: active ? 'green':'red',color: 'white'}">Lorem
+<!-- <p class="container" [appStyle]="{backgroundColor: active ? 'green':'red',color: 'white'}">Lorem
       ipsum dolor sit amet,
       consectetur
       adipisicing elit. Voluptatibus,
@@ -74,28 +73,8 @@
       reprehenderit.
       Officiis adipisci
       excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p> -->
-    <!-- NgClass -->
-    <!-- <p [ngClass]="{'container' : true, 'font-chnage' : true}">Lorem
-      ipsum dolor sit amet,
-      consectetur
-      adipisicing elit. Voluptatibus,
-      autem
-      reprehenderit.
-      Officiis adipisci
-      excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p> -->
-
-    <!-- custom NgClass -->
-    <!-- Scenarion 1 -->
-    <!-- <p appClass [display]="{'container' : true, 'font-chnage' : true}">Lorem
-      ipsum dolor sit amet,
-      consectetur
-      adipisicing elit. Voluptatibus,
-      autem
-      reprehenderit.
-      Officiis adipisci
-      excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p> -->
-    <!-- Scenario 2 -->
-    <!-- <p [appClass]="{'container' : true, 'font-chnage' : true}">Lorem
+<!-- NgClass -->
+<!-- <p [ngClass]="{'container' : true, 'font-chnage' : true}">Lorem
       ipsum dolor sit amet,
       consectetur
       adipisicing elit. Voluptatibus,
@@ -104,8 +83,28 @@
       Officiis adipisci
       excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p> -->
 
-    <!-- </div> -->
-    <!-- <div class="container d-flex flex-row  justify-content-center">
+<!-- custom NgClass -->
+<!-- Scenarion 1 -->
+<!-- <p appClass [display]="{'container' : true, 'font-chnage' : true}">Lorem
+      ipsum dolor sit amet,
+      consectetur
+      adipisicing elit. Voluptatibus,
+      autem
+      reprehenderit.
+      Officiis adipisci
+      excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p> -->
+<!-- Scenario 2 -->
+<!-- <p [appClass]="{'container' : true, 'font-chnage' : true}">Lorem
+      ipsum dolor sit amet,
+      consectetur
+      adipisicing elit. Voluptatibus,
+      autem
+      reprehenderit.
+      Officiis adipisci
+      excepturi quod iure perferendis nobis tempora soluta dolores aliquid eos.</p> -->
+
+<!-- </div> -->
+<!-- <div class="container d-flex flex-row  justify-content-center">
     <ng-container>
       <div class="card m-3" style="width: 18rem;" *ngFor="let card of cards"
         [appHighlighter2]="card.likes === mostLikes ">
@@ -119,17 +118,17 @@
     </ng-container>
 
   </div> -->
-    <!-- Default dehaviour of *ng if -->
-    <!-- <button class="btn btn-warning" (click)="notifyMe()"> Notify</button> -->
+<!-- Default dehaviour of *ng if -->
+<!-- <button class="btn btn-warning" (click)="notifyMe()"> Notify</button> -->
 
-    <!-- Creating Custom *ngIF -> *appIf structural Directive-->
-    <!-- <div class="container">
+<!-- Creating Custom *ngIF -> *appIf structural Directive-->
+<!-- <div class="container">
       <p *appIf="displayNotify">
         This is to notify you !
       </p>
     </div> -->
 
-    <!--
+<!--
     <div class="container">
       <p *ngIf="displayNotify; else myVar">
         This is to notify you !
@@ -139,9 +138,9 @@
       <p>Random notification</p>
     </ng-template> -->
 
-    <!-- In context how anguler behaive in *ngIf-->
+<!-- In context how anguler behaive in *ngIf-->
 
-    <!-- <div class="container">
+<!-- <div class="container">
       <ng-template [ngIf]='displayNotify' [ngIfElse]="myVar">
         <p>
           This is to notify you !
@@ -153,8 +152,8 @@
     </ng-template> -->
 
 
-    <!-- Ng Switch Case example -->
-    <!-- <div class="container">
+<!-- Ng Switch Case example -->
+<!-- <div class="container">
       <input type="text" #inputValue>
       <button (click)="getValue(inputValue.value)">Click</button>
       <br>
@@ -167,7 +166,21 @@
       </div>
     </div> -->
 
-    <!-- Service Intro -->
-    <app-angular class="pr-6"></app-angular>
-    <app-javascript></app-javascript>
+<!-- Service Intro -->
+<!-- <app-angular class="pr-6"></app-angular>
+    <app-javascript></app-javascript> -->
+
+<!-- Creating a Data Service -->
+<div class="container">
+  <app-add-user></app-add-user>
+  <div class="user-div" *ngFor="let user of users">
+    <div class="user-name">
+      {{user.name}}
+    </div>
+    <div class="user-status">
+      {{user.status}}
+    </div>
   </div>
+</div>
+
+<!-- </div> -->

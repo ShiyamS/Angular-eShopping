@@ -3,14 +3,17 @@
 } */
 
 .container {
-  margin: 10px 20px;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: center;
+  width: 640px;
+  margin: 30px auto;
+  padding: 20px 30px;
+  background-color: #f7f7f7;
+  font-family: "Lucida Sans";
+  /* display: flex;
+  justify-content: center; */
   /* background: grey; */
 }
 
-.font-chnage {
+/* .font-chnage {
   font-size: 16px;
   font-family: "Courier New", Courier, monospace;
   color: blueviolet;
@@ -18,4 +21,20 @@
 
 .card-higlighter {
   border: blue 7px solid;
+} */
+
+.user-div {
+  display: flex;
+  margin: 5px 0px;
+}
+.user-name {
+  width: 80%;
+  padding: 10px 30px;
+  background-color: #eee;
+}
+
+.user-status {
+  width: 20%;
+  padding: 10px 40px;
+  background-color: #fadbd8;
 }

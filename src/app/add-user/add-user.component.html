@@ -1,0 +1,14 @@
+<div class="form">
+  <div>
+    <input type="text" placeholder="User name" id="username" [(ngModel)]="userName">
+  </div>
+  <div>
+    <select name="status" id="status" [(ngModel)]="status">
+      <option value="active">Active</option>
+      <option value="inactive">In-Active</option>
+    </select>
+  </div>
+  <div>
+    <button (click)="onAddUser()">Create User</button>
+  </div>
+</div>

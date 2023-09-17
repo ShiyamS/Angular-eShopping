@@ -1,10 +1,11 @@
 import { Component, ElementRef, ViewChild, OnInit } from '@angular/core';
 import { DemoComponent } from './demo/demo.component';
+import { UserService } from './services/user.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
   title = 'AngularApp';
@@ -21,9 +22,12 @@ export class AppComponent implements OnInit {
 
   @ViewChild(DemoComponent, { static: true }) demo?: DemoComponent;
 
+  constructor(private userService: UserService) {
+
+  }
 
   ngOnInit(): void {
-
+    this.users = this.userService.users
   }
   calculateAge() {
     let birthYear = new Date(this.dob.nativeElement.value).getFullYear();
@@ -63,6 +67,10 @@ export class AppComponent implements OnInit {
     this.userValue = value;
     console.log(value);
   }
+
+  // Data Serive
+
+  users: { name: string, status: string }[] = [];
 
 
 }

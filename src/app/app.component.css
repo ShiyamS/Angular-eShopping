@@ -5,7 +5,9 @@
 .container {
   margin: 10px 20px;
   padding: 10px 20px;
-  background: grey;
+  display: flex;
+  justify-content: center;
+  /* background: grey; */
 }
 
 .font-chnage {

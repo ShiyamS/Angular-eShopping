@@ -22,10 +22,12 @@ import { ClassDirective } from './customDirectives/class.directive';
 import { Highlighter2Directive } from './customDirectives/highlighter2.directive';
 import { StyleDirective } from './customDirectives/style.directive';
 import { IfDirective } from './customDirectives/if.directive';
+import { AngularComponent } from './angular/angular.component';
+import { JavascriptComponent } from './javascript/javascript.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ContainerComponent, NavComponent, HeaderComponent, NotificationComponent, SearchComponent, ProductsComponent, FilterComponent, DemoComponent, CustomerComponent, NgContentComponent, ContentChilcComponent, SetBackgroundDirective, HighlighterDirective, HoverDirective, BetterHighlighterDirective, ClassDirective, Highlighter2Directive, StyleDirective, IfDirective
+    AppComponent, ContainerComponent, NavComponent, HeaderComponent, NotificationComponent, SearchComponent, ProductsComponent, FilterComponent, DemoComponent, CustomerComponent, NgContentComponent, ContentChilcComponent, SetBackgroundDirective, HighlighterDirective, HoverDirective, BetterHighlighterDirective, ClassDirective, Highlighter2Directive, StyleDirective, IfDirective, AngularComponent, JavascriptComponent
   ],
   imports: [
     BrowserModule,

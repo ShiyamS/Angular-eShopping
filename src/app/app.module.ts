@@ -27,6 +27,7 @@ import { JavascriptComponent } from './javascript/javascript.component';
 import { EnrollService } from './services/enroll.service';
 import { AddUserComponent } from './add-user/add-user.component';
 import { UserService } from './services/user.service';
+import { LoggerService } from './services/logger.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { UserService } from './services/user.service';
     BrowserModule,
     FormsModule,
   ],
-  providers: [EnrollService, UserService],
+  providers: [EnrollService, UserService, LoggerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

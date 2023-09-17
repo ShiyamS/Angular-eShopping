@@ -29,14 +29,14 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.users = this.userService.users
   }
-  calculateAge() {
-    let birthYear = new Date(this.dob.nativeElement.value).getFullYear();
-    let currentYear = new Date().getFullYear();
+  // calculateAge() {
+  //   let birthYear = new Date(this.dob.nativeElement.value).getFullYear();
+  //   let currentYear = new Date().getFullYear();
 
-    let age = currentYear - birthYear;
+  //   let age = currentYear - birthYear;
 
-    this.age.nativeElement.value = age;
-  }
+  //   this.age.nativeElement.value = age;
+  // }
 
   cards = [
     { title: 'Random Title 1', cardImage: "https://picsum.photos/100/100", likes: 800 },

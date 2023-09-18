@@ -1,7 +1,7 @@
 import { Component, ElementRef, ViewChild, OnInit } from '@angular/core';
 import { DemoComponent } from './demo/demo.component';
 import { UserService } from './services/user.service';
-import { Observable } from 'rxjs';
+import { Observable, of, from } from 'rxjs';
 
 
 @Component({
@@ -28,6 +28,8 @@ export class AppComponent implements OnInit {
 
   // }
 
+  // Different ways of creating an observable
+  // Using the constructor method - new Observable
   myObservable = new Observable((observer) => {
     console.log("Observer started")
     setTimeout(() => { observer.next(1) }, 1000)
@@ -43,6 +45,28 @@ export class AppComponent implements OnInit {
     // observer.next(4)
     // observer.next(5)
   })
+
+  // Using create method- it behavious same as the constructor  method
+  // myObservable = Observable.create((observer: any) => {
+  //   console.log("Observer started")
+  //   setTimeout(() => { observer.next(1) }, 1000)
+  //   setTimeout(() => { observer.next(2) }, 2000)
+  //   setTimeout(() => { observer.next(3) }, 3000)
+  //   setTimeout(() => { observer.next(4) }, 4000)
+  //   setTimeout(() => { observer.error(new Error("Someting went wrong !")) }, 4000)
+  //   setTimeout(() => { observer.next(5) }, 5000)
+  //   setTimeout(() => { observer.complete() }, 6000)
+  // })
+
+  // Using (of) Operator - u need to import
+  array1 = [1, 2, 3, 4, 5];
+  array2 = ['A', 'B', 'C', 'D', 'E']
+  array3 = 'String check'
+
+  // myObservable = of(this.array1, this.array2)
+
+  // Using (From) Operator - u nned to import it
+  // myObservable = from(this.array3)
 
   ngOnInit(): void {
 

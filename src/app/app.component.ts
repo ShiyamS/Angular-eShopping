@@ -8,26 +8,26 @@ import { UserService } from './services/user.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  title = 'AngularApp';
+  // title = 'AngularApp';
 
 
 
 
-  @ViewChild('dobInput')
-  dob!: ElementRef;
+  // @ViewChild('dobInput')
+  // dob!: ElementRef;
 
-  @ViewChild('ageInput') age!: ElementRef;
+  // @ViewChild('ageInput') age!: ElementRef;
 
-  // Child Comp
+  // // Child Comp
 
-  @ViewChild(DemoComponent, { static: true }) demo?: DemoComponent;
+  // @ViewChild(DemoComponent, { static: true }) demo?: DemoComponent;
 
-  constructor(private userService: UserService) {
+  // constructor(private userService: UserService) {
 
-  }
+  // }
 
   ngOnInit(): void {
-    this.users = this.userService.users
+    // this.users = this.userService.users
   }
   // calculateAge() {
   //   let birthYear = new Date(this.dob.nativeElement.value).getFullYear();
@@ -38,39 +38,39 @@ export class AppComponent implements OnInit {
   //   this.age.nativeElement.value = age;
   // }
 
-  cards = [
-    { title: 'Random Title 1', cardImage: "https://picsum.photos/100/100", likes: 800 },
-    { title: 'Random Title 2', cardImage: "https://picsum.photos/100/100", likes: 500 },
-    { title: 'Random Title 2', cardImage: "https://picsum.photos/100/100", likes: 100 },
-  ]
+  // cards = [
+  //   { title: 'Random Title 1', cardImage: "https://picsum.photos/100/100", likes: 800 },
+  //   { title: 'Random Title 2', cardImage: "https://picsum.photos/100/100", likes: 500 },
+  //   { title: 'Random Title 2', cardImage: "https://picsum.photos/100/100", likes: 100 },
+  // ]
 
 
-  mostLikedCard() {
-    let copyCards = [...this.cards]
-    return copyCards.sort((curr, next) => next.likes - curr.likes)[0].likes;
-  }
+  // mostLikedCard() {
+  //   let copyCards = [...this.cards]
+  //   return copyCards.sort((curr, next) => next.likes - curr.likes)[0].likes;
+  // }
 
-  mostLikes = this.mostLikedCard();
+  // mostLikes = this.mostLikedCard();
 
-  // Based on condition we are setting the background color
-  active: boolean = false
+  // // Based on condition we are setting the background color
+  // active: boolean = false
 
-  displayNotify: boolean = false;
+  // displayNotify: boolean = false;
 
-  notifyMe() {
-    this.displayNotify = true;
-  }
+  // notifyMe() {
+  //   this.displayNotify = true;
+  // }
 
-  userValue: string = ''
+  // userValue: string = ''
 
-  getValue(value: string) {
-    this.userValue = value;
-    console.log(value);
-  }
+  // getValue(value: string) {
+  //   this.userValue = value;
+  //   console.log(value);
+  // }
 
-  // Data Serive
+  // // Data Serive
 
-  users: { name: string, status: string }[] = [];
+  // users: { name: string, status: string }[] = [];
 
 
 }

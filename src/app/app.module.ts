@@ -28,16 +28,19 @@ import { EnrollService } from './services/enroll.service';
 import { AddUserComponent } from './add-user/add-user.component';
 import { UserService } from './services/user.service';
 import { LoggerService } from './services/logger.service';
+import { UsersService } from './services/users.service';
+import { AllUsersComponent } from './all-users/all-users.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ContainerComponent, NavComponent, HeaderComponent, NotificationComponent, SearchComponent, ProductsComponent, FilterComponent, DemoComponent, CustomerComponent, NgContentComponent, ContentChilcComponent, SetBackgroundDirective, HighlighterDirective, HoverDirective, BetterHighlighterDirective, ClassDirective, Highlighter2Directive, StyleDirective, IfDirective, AngularComponent, JavascriptComponent, AddUserComponent
+    AppComponent, ContainerComponent, NavComponent, HeaderComponent, NotificationComponent, SearchComponent, ProductsComponent, FilterComponent, DemoComponent, CustomerComponent, NgContentComponent, ContentChilcComponent, SetBackgroundDirective, HighlighterDirective, HoverDirective, BetterHighlighterDirective, ClassDirective, Highlighter2Directive, StyleDirective, IfDirective, AngularComponent, JavascriptComponent, AddUserComponent, AllUsersComponent, UserDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
   ],
-  providers: [EnrollService, UserService, LoggerService],
+  providers: [EnrollService, UserService, LoggerService, UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

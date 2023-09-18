@@ -33,8 +33,10 @@ export class AppComponent implements OnInit {
     setTimeout(() => { observer.next(1) }, 1000)
     setTimeout(() => { observer.next(2) }, 2000)
     setTimeout(() => { observer.next(3) }, 3000)
+    setTimeout(() => { observer.error(new Error("Someting went wrong !")) }, 3000)
     setTimeout(() => { observer.next(4) }, 4000)
     setTimeout(() => { observer.next(5) }, 5000)
+    setTimeout(() => { observer.complete() }, 6000)
     // observer.next(1)
     // observer.next(2)
     // observer.next(3)
@@ -47,6 +49,10 @@ export class AppComponent implements OnInit {
     this.myObservable.subscribe((value) => {
       console.log(value);
 
+    }, (error) => {
+      alert(error.message)
+    }, () => {
+      alert("Observable is completed")
     })
     // this.users = this.userService.users
   }

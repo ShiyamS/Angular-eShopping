@@ -1,7 +1,7 @@
 import { Component, ElementRef, ViewChild, OnInit } from '@angular/core';
 import { DemoComponent } from './demo/demo.component';
 import { UserService } from './services/user.service';
-import { Observable, of, from } from 'rxjs';
+import { Observable, of, from, interval, Subscription } from 'rxjs';
 import { map, filter } from 'rxjs/operators'
 
 
@@ -85,10 +85,14 @@ export class AppComponent implements OnInit {
   //   return value >= 10
   // }))
 
+  newObserver = interval(1000);
 
-
+  observerRecorded: Subscription | undefined;
   ngOnInit(): void {
 
+    this.observerRecorded = this.newObserver.subscribe((data) => {
+      console.log(data)
+    })
     // this.myObservable.subscribe((value) => {
     //   console.log(value);
 
@@ -99,6 +103,12 @@ export class AppComponent implements OnInit {
     // })
     // this.users = this.userService.users
   }
+
+  unSubscribe() {
+    this.observerRecorded?.unsubscribe();
+  }
+
+
   // calculateAge() {
   //   let birthYear = new Date(this.dob.nativeElement.value).getFullYear();
   //   let currentYear = new Date().getFullYear();

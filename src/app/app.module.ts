@@ -31,10 +31,12 @@ import { LoggerService } from './services/logger.service';
 import { UsersService } from './services/users.service';
 import { AllUsersComponent } from './all-users/all-users.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
+import { Comp1Component } from './comp1/comp1.component';
+import { Comp2Component } from './comp2/comp2.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ContainerComponent, NavComponent, HeaderComponent, NotificationComponent, SearchComponent, ProductsComponent, FilterComponent, DemoComponent, CustomerComponent, NgContentComponent, ContentChilcComponent, SetBackgroundDirective, HighlighterDirective, HoverDirective, BetterHighlighterDirective, ClassDirective, Highlighter2Directive, StyleDirective, IfDirective, AngularComponent, JavascriptComponent, AddUserComponent, AllUsersComponent, UserDetailComponent
+    AppComponent, ContainerComponent, NavComponent, HeaderComponent, NotificationComponent, SearchComponent, ProductsComponent, FilterComponent, DemoComponent, CustomerComponent, NgContentComponent, ContentChilcComponent, SetBackgroundDirective, HighlighterDirective, HoverDirective, BetterHighlighterDirective, ClassDirective, Highlighter2Directive, StyleDirective, IfDirective, AngularComponent, JavascriptComponent, AddUserComponent, AllUsersComponent, UserDetailComponent, Comp1Component, Comp2Component
   ],
   imports: [
     BrowserModule,

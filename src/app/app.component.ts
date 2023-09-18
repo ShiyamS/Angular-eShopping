@@ -2,6 +2,7 @@ import { Component, ElementRef, ViewChild, OnInit } from '@angular/core';
 import { DemoComponent } from './demo/demo.component';
 import { UserService } from './services/user.service';
 import { Observable, of, from } from 'rxjs';
+import { map, filter } from 'rxjs/operators'
 
 
 @Component({
@@ -30,21 +31,21 @@ export class AppComponent implements OnInit {
 
   // Different ways of creating an observable
   // Using the constructor method - new Observable
-  myObservable = new Observable((observer) => {
-    console.log("Observer started")
-    setTimeout(() => { observer.next(1) }, 1000)
-    setTimeout(() => { observer.next(2) }, 2000)
-    setTimeout(() => { observer.next(3) }, 3000)
-    setTimeout(() => { observer.error(new Error("Someting went wrong !")) }, 3000)
-    setTimeout(() => { observer.next(4) }, 4000)
-    setTimeout(() => { observer.next(5) }, 5000)
-    setTimeout(() => { observer.complete() }, 6000)
-    // observer.next(1)
-    // observer.next(2)
-    // observer.next(3)
-    // observer.next(4)
-    // observer.next(5)
-  })
+  // myObservable = new Observable((observer) => {
+  //   console.log("Observer started")
+  //   setTimeout(() => { observer.next(1) }, 1000)
+  //   setTimeout(() => { observer.next(2) }, 2000)
+  //   setTimeout(() => { observer.next(3) }, 3000)
+  //   setTimeout(() => { observer.error(new Error("Someting went wrong !")) }, 3000)
+  //   setTimeout(() => { observer.next(4) }, 4000)
+  //   setTimeout(() => { observer.next(5) }, 5000)
+  //   setTimeout(() => { observer.complete() }, 6000)
+  //   // observer.next(1)
+  //   // observer.next(2)
+  //   // observer.next(3)
+  //   // observer.next(4)
+  //   // observer.next(5)
+  // })
 
   // Using create method- it behavious same as the constructor  method
   // myObservable = Observable.create((observer: any) => {
@@ -66,18 +67,36 @@ export class AppComponent implements OnInit {
   // myObservable = of(this.array1, this.array2)
 
   // Using (From) Operator - u nned to import it
-  // myObservable = from(this.array3)
+
+  //  Usage of RXJS Operators
+  // myObservable = from(this.array1).pipe(map((value) => {
+  //   return value * 5
+  // }), filter((value) => {
+  //   return value >= 10
+  // }))
+
+  // transformedOperator = this.myObservable.pipe(map((value) => {
+  //   return value * 5
+  // }), filter((value) => {
+  //   return value >= 10
+  // }))
+
+  // filteredOperator = this.transformedOperator.pipe(filter((value) => {
+  //   return value >= 10
+  // }))
+
+
 
   ngOnInit(): void {
 
-    this.myObservable.subscribe((value) => {
-      console.log(value);
+    // this.myObservable.subscribe((value) => {
+    //   console.log(value);
 
-    }, (error) => {
-      alert(error.message)
-    }, () => {
-      alert("Observable is completed")
-    })
+    // }, (error) => {
+    //   alert(error.message)
+    // }, () => {
+    //   alert("Observable is completed")
+    // })
     // this.users = this.userService.users
   }
   // calculateAge() {
